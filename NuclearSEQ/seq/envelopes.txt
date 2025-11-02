@@ -1,0 +1,17 @@
+Volume_Env1: 0, 90, 48, 0
+Volume_Env2: 0, 40, 90, 32
+Volume_Env3: 10, 14, 21, 40
+Volume_Env4: 52, 92, 45, 50
+Volume_Env5: 4, 92, 0, 54
+Volume_Env6: 16, 92, 0, 54
+Volume_Env7: 0, 0, 91, 12
+Volume_Env8: 24, 32, 26, 30
+Volume_Env9: 16, 92, 127, 54
+Volume_Env10: 0, 6, 0, 0
+Pitch_Env1: 12, 4, 70, 24
+Pitch_Env2: 0, 6, 300, 0
+Pitch_Env3: 16, 96, 16, 12
+Pitch_Env4: 0, 2, 600, 0
+Slide_Env: 1, -1, 0, -24, 16
+Slide_Env: 2, 60, 72, 60, 12
+Slide_Env: 2, 40, 30, 30, 2
