@@ -30,11 +30,14 @@
 
 # Sequencing Guidelines
 - The quantization rate for note-length as well as automation is a 64th note. This means note lengths or automation changes that are smaller than a 64th note or note changes that occur on a non-64th note division will be skipped. To fix this, simply quantize all notes and automation changes to a 64th interval (1/4 step).
+	- If you can help it, try avoiding notes that occur once every 64th as with an increase in BPM, a decrease in timing accuracy happens as well. 32nds are always safe, so if you need resolution, try multiplying your BPM by 2 and stretching your notes to compensate by 2. (e.g. a 64th at 120 BPM becomes a 32nd at 240 BPM).
 - BPM changes mid-song are currently not supported, but might be if there is demand for it.
 - Though this format uses MIDI, sequences are expected by the player to be made in a tracker-like format, meaning there is no dynamic channel allocation and only one note is expected to play at a time. Multiple notes played on one channel will *not* find an empty channel per note to allocate all notes; instead, only one will play and the others will be discarded.
     - Similarly, if two notes overlap each other, the first note will be cut off by the second note.
 - Rapid automation changes in MIDIs, especially ones produced by FL Studio, may cause playback to slow slightly. If this occurs, optimize your automation changes by quantizing them so they do not occur every 64th.
 - By default, the pitch bend range is +/- 12 semitones. This can be changed by altering the `PITCH_BEND_RANGE_SEMITONES` macro.
+-Channels 9-16 in MIDI map to channels 8-15 on the DS. Other channels will not play sound.
+
 - *For FL Studio users: If you cannot hear anything on Channel 10 when sequencing using Fruity LSD because it is always mapped as a drumkit, sequence on another channel and then change back to Channel 10 before exporting as MIDI.*
 
 # Duty Cycle
