@@ -108,3 +108,7 @@ Envelopes in NuclearSEQ are defined in the `envelopes.txt` file. Each envelope (
 
 # Additional Resources
 - https://blocksds.skylyrac.net/docs/libnds/sound_8h.html
+
+# Known Bugs
+- Sometimes really fast note-offs are missed at higher tempos.
+- Pan law is not yet implemented (Debating implementing this in the convertor or the player itself).
